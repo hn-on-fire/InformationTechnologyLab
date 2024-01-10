@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Employees</h1>
+    <table id="employeeTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Department</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Employee rows will be added here by JavaScript -->
+        </tbody>
+    </table>
+    <div class="modal" id="addModal">
+        <h2>Add Employee</h2>
+        <form id="addForm">
+            <label for="fname">First Name:</label>
+
+            <input type="text" id="fname" name="fname">
+
+            <label for="lname">Last Name:</label>
+
+            <input type="text" id="lname" name="lname">
+
+            <label for="dept">Department:</label>
+
+            <select id="dept" name="dept">
+                <option value="HR">Human Resources</option>
+                <option value="IT">Information Technology</option>
+                <option value="Finance">Finance</option>
+            </select>
+
+            <input type="hidden" id="id" name="id" value="-1">
+            <button type="submit">Save</button>
+        </form>
+    </div>
+    <button id="addBtn">+ Add New Employee</button>
+    <script src="scripts.js"></script>
+</body>
+</html>

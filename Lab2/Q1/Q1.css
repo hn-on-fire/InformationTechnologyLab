@@ -1,0 +1,57 @@
+#studentForm {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#studentForm label {
+    display: block;
+    margin-top: 10px;
+}
+
+#studentForm input[type="text"] {
+    width: 100%;
+    padding: 5px;
+}
+
+#genderFieldset {
+    margin-top: 20px;
+}
+
+#genderFieldset legend {
+    font-weight: bold;
+}
+
+#interestTable {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#interestTable th {
+    border: 1px solid #ccff00;
+    background-color:bisque ;
+    padding: 5px;
+}
+
+#interestTable td {
+    border: 1px solid #00ff6a;
+    padding: 5px;
+}
+
+#interestTable input[type="checkbox"] {
+    margin: 0;
+}
+
+#studentForm button {
+    display: block;
+    margin: 20px auto;
+    padding: 5px 10px;
+    background-color: #bfff00;
+    color: rgb(255, 136, 136);
+    border: none;
+    cursor: pointer;
+}
+
+#studentForm button:hover {
+    background-color: #ffffff;
+    border: 1px solid black;
+}

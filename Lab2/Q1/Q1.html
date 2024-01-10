@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <html lang="en-us">
+       <link rel="stylesheet" href="Q1.css">
+    <title>Student Biodata</title>
+</head>
+<body>
+    <form id="studentForm">
+        <label for="name">Name:</label>
+    
+        <input type="text" id="name" name="name">
+    
+        <label for="major">Major:</label>
+    
+        <input type="text" id="major" name="major">
+    
+        <fieldset id="genderFieldset">
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+    
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+    
+        </fieldset>
+        <table id="interestTable">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Interest 1</th>
+                    <th>Interest 2</th>
+                    <th>Interest 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Music:</td>
+                    <td><input type="checkbox" id="music1" name="music[]"></td>
+                    <td><input type="checkbox" id="music2" name="music[]"></td>
+                    <td><input type="checkbox" id="music3" name="music[]"></td>
+                </tr>
+                <tr>
+                    <td>Art:</td>
+                    <td><input type="checkbox" id="art1" name="art[]"></td>
+                    <td><input type="checkbox" id="art2" name="art[]"></td>
+                    <td><input type="checkbox" id="art3" name="art[]"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="submit">Submit</button>
+    </form>
+</body>
