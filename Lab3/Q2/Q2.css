@@ -1,0 +1,15 @@
+#clock {
+	font-size: 175px;
+	width: 900px;
+	margin: 200px;
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 20px;
+}
+#greeting{
+	font-size: 50px;
+	color: red;
+	font-style: italic;
+	padding-left: 40%;
+	font-family: 'Times New Roman', Times, serif;
+}

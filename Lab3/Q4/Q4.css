@@ -1,0 +1,20 @@
+#options{
+    background-color: aqua;
+    display: block;
+    margin:auto 40%;
+    border: 2px solid black;
+    text-align: center;
+	border-radius: 20px;
+}
+#color{
+    background-color: white;
+    min-width:50px;
+    width: 180px;
+    margin: 2% auto;
+    min-height: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+
+}

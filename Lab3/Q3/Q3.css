@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+    max-width: 500px;
+    margin: auto;
+}
+
+#gradeForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+    background-color: lightgreen;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid green;
+    color: green;
+    font-weight: bold;
+}
