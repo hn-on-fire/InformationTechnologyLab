@@ -1,0 +1,36 @@
+/* style.css */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card {
+    width: 400px;
+    margin: 20px auto;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.card-header {
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.controls {
+    width: 400px;
+    margin: 20px auto;
+}
+
+.form-group {
+    margin: 10px 0;
+}

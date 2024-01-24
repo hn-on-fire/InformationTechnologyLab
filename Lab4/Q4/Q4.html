@@ -1,0 +1,80 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .dropdown {
+            margin: 10px;
+        }
+        .checkbox {
+            margin: 10px;
+        }
+        .textbox {
+            margin: 10px;
+        }
+        .button {
+            margin: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Webpage Design with jQuery</h1>
+    <div class="container">
+        <div class="dropdown">
+            <label for="brand">Select a brand:</label>
+            <select id="brand">
+                <option value="HP">HP</option>
+                <option value="Nokia">Nokia</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Motorola">Motorola</option>
+                <option value="Apple">Apple</option>
+            </select>
+        </div>
+        <div class="checkbox">
+            <label for="mobile">Mobile</label>
+            <input type="checkbox" id="mobile" value="10000">
+            <label for="laptop">Laptop</label>
+            <input type="checkbox" id="laptop" value="50000">
+        </div>
+        <div class="textbox">
+            <label for="quantity">Enter quantity:</label>
+            <input type="number" id="quantity" min="1" max="10" value="1">
+        </div>
+        <button class="button" id="bill">Produce Bill</button>
+    </div>
+    <script>
+        // jQuery code to handle the button click and display the alert
+        $(document).ready(function() {
+            $("#bill").click(function() {
+                // Get the selected brand, checked items, and quantity
+                var brand = $("#brand").val();
+                var mobile = $("#mobile").is(":checked");
+                var laptop = $("#laptop").is(":checked");
+                var quantity = $("#quantity").val();
+
+                // Calculate the total amount based on the checked items and quantity
+                var amount = 0;
+                if (mobile) {
+                    amount += $("#mobile").val() * quantity;
+                }
+                if (laptop) {
+                    amount += $("#laptop").val() * quantity;
+                }
+
+                // Display the alert with the total amount
+                alert("You have selected " + brand + " and your total amount is " + amount + " rupees.");
+            });
+        });
+    </script>
+</body>
+</html>

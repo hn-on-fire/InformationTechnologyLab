@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #myTable tr:nth-child(even) {background: red}
+        #myTable tr:nth-child(odd) {background: blue}
+        #container {position: relative; width: 100%; padding: 50%;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="container">
+    <table id="myTable">
+        <tr><td>Data 1</td><td>Data 2</td><td>Data 3</td></tr>
+        <tr><td>Data 4</td><td>Data 5</td><td>Data 6</td></tr>
+        <tr><td>Data 7</td><td>Data 8</td><td>Data 9</td></tr>
+    </table>
+    <img id="myImage" src="img.jpg" alt="Your Image">
+</div>
+
+<button id="moveButton">Move</button>
+
+<script>
+$(document).on('click', '#moveButton', function(){
+        $("#container").animate({left: '-=120px'});
+    });
+</script>
+
+</body>
+</html>

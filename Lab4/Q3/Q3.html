@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Webpage</title>
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include custom CSS file -->
+    <link rel="stylesheet" href="Q3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2 id="card-title">Happy Birthday</h2>
+            </div>
+            <div class="card-body">
+                <p id="card-text">This is some text inside the card.</p>
+                <img id="card-image" src="img.jpg" alt="Placeholder image">
+            </div>
+        </div>
+        <div class="controls">
+            <p>Use the following controls to customize the card:</p>
+            <div class=""form-group">
+                <textarea for="Text" id = "greet">Input Text Here</textarea>
+            </div>
+            <div class="form-group">
+                <label for="color-select">Select a color:</label>
+                <select id="color-select">
+                    <option value="white">White</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="yellow">Yellow</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="font-select">Select a font:</label>
+                <select id="font-select">
+                    <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Comic Sans MS">Comic Sans MS</option>
+                    <option value="Georgia">Georgia</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="size-input">Enter a font size (in pixels):</label>
+                <input id="size-input" type="number" min="10" max="50" value="20">
+            </div>
+            <div class="form-group">
+                <label for="image-checkbox">Show image on the card:</label>
+                <input id="image-checkbox" type="checkbox" checked>
+            </div>
+        </div>
+    </div>
+    <!-- Include custom JS file -->
+    <script src="Q3.js"></script>
+</body>
+</html>
